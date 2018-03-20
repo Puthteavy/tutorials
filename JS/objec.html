@@ -1,0 +1,62 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+    var user={
+        username:"theavy",
+        password:"123"
+    };
+    var datbase =[
+        {
+            username:"theavy",
+            password:"123"
+        },
+        {
+            username:"theara",
+            password:"1234"
+        },
+    ];
+    var newsfeed = [
+        {
+            username: "Bobby",
+            timeline: "So tired from all that learning!"
+        },
+        {
+            username: "Sally",
+            timeline: "Javascript is sooooo cool!"
+        },
+        {
+            username: "Mitch",
+            timeline: "Javascript is preeetyy cool!"
+        }
+    ];
+
+    var usernamePrompt = prompt("What's your name");
+    var passwordPrompt  = prompt("What's password");
+
+    function signin(user,pass) {
+        if(user === datbase[0].username && pass === datbase[0].password){
+            console.log(newsfeed);
+        }else{
+            alert("You're wrong user");
+        }
+    }
+    function isValidUser(username, password) {
+        for(var i=0;i<datbase.length;i++){
+            if(datbase[i].username === username && datbase[i].password === password){
+                return true;
+            }
+        }
+        return false;
+    }
+    function userSignin(username, password) {
+        if(isValidUser(username, password)){
+            console.log(newsfeed);
+        }else{ alert("Sorry , wrong user name and password");}
+    }
+    //signin(username,password);
+    userSignin(usernamePrompt,passwordPrompt);
+
+</script>
+</body>
+</html>

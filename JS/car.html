@@ -1,0 +1,58 @@
+<html>
+<head></head>
+<body>
+<div class="content">
+ <h1>Keyless Car</h1>
+</div>
+<script type="text/javascript">
+    <!-- create keyless car-->
+    function checkDriverAge() {
+        var age = prompt("Please input your age");
+        if(Number(age) > 18){
+            alert("Powering On. Enjoy the ride!");
+
+        }else if(Number(age) === 18 ){
+            alert("Congratulations on your first year of driving. Enjoy the ride!");
+
+
+        }else if(Number(age) < 18){
+            alert("Sorry, you are too yound to drive this car. Powering off");
+        }
+
+    }
+
+    var checkDriverAge2 = function checkDriverAge() {
+        var age = prompt("Please input your age");
+        if(Number(age) > 18){
+            alert("Powering On. Enjoy the ride!");
+
+        }else if(Number(age) === 18 ){
+            alert("Congratulations on your first year of driving. Enjoy the ride!");
+
+
+        }else if(Number(age) < 18){
+            alert("Sorry, you are too yound to drive this car. Powering off");
+        }
+    };
+    // with parameter
+
+    function checkDriverAge3(age) {
+        //var age = prompt("Please input your age");
+        if(Number(age) > 18){
+            alert("Powering On. Enjoy the ride!");
+
+        }else if(Number(age) === 18 ){
+            alert("Congratulations on your first year of driving. Enjoy the ride!");
+
+
+        }else if(Number(age) < 18){
+            alert("Sorry, you are too yound to drive this car. Powering off");
+        }
+    }
+    //checkDriverAge();
+//    call
+    ///checkDriverAge2();
+    checkDriverAge3(22);
+</script>
+</body>
+</html>

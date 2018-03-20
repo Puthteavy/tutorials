@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+
+<script type="text/javascript">
+    var todo = [
+        'Hello','Hi','Welcome'
+    ];
+    var todoLength = todo.length;
+    for (var i = 0; i< todoLength;i++){
+        console.log(todo[i]);
+    }
+    todo.forEach(function (todos) {
+        console.log(todos);
+    });
+//    or
+    function logTodo(todos) {
+        console.log(todos)
+
+    }
+    todo.forEach(logTodo);
+
+
+    var number = 0;
+    do{
+        console.log("Do While ",number);
+        number ++;
+    }while(number <= 10);
+    var count = 0;
+    while(count <=10){
+        console.log("While loop",count);
+        count ++;
+    }
+</script>
+</body>
+</html>
